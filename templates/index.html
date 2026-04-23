@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="College Information Chatbot – Get instant answers about admissions, fees, courses, faculty, and more." />
+  <meta name="keywords" content="college chatbot, admissions, fees, courses, AI chatbot" />
+  <title>CollegeBot – Your Smart Campus Assistant</title>
+
+  <!-- Google Fonts: Inter for body, Outfit for headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════
+       Background decoration: animated gradient orbs
+  ═══════════════════════════════════════════════════ -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════
+       Main App Layout
+  ═══════════════════════════════════════════════════ -->
+  <div class="app-wrapper">
+
+    <!-- ── Sidebar ────────────────────────────────── -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-logo">
+        <div class="logo-icon" aria-hidden="true">🎓</div>
+        <div class="logo-text">
+          <span class="logo-name">CollegeBot</span>
+          <span class="logo-tag">AI Campus Assistant</span>
+        </div>
+      </div>
+
+      <nav class="sidebar-nav" aria-label="Quick topics">
+        <p class="nav-label">Quick Topics</p>
+        <ul class="topic-list" role="list">
+          <li><button class="topic-btn" data-query="How do I apply for admission?" aria-label="Ask about admissions">
+            <span class="topic-icon">📋</span> Admissions
+          </button></li>
+          <li><button class="topic-btn" data-query="What is the fee structure?" aria-label="Ask about fees">
+            <span class="topic-icon">💰</span> Fee Structure
+          </button></li>
+          <li><button class="topic-btn" data-query="What courses do you offer?" aria-label="Ask about courses">
+            <span class="topic-icon">📚</span> Courses
+          </button></li>
+          <li><button class="topic-btn" data-query="When are the exams?" aria-label="Ask about exams">
+            <span class="topic-icon">📝</span> Exams
+          </button></li>
+          <li><button class="topic-btn" data-query="Who are the faculty members?" aria-label="Ask about faculty">
+            <span class="topic-icon">👩‍🏫</span> Faculty
+          </button></li>
+          <li><button class="topic-btn" data-query="What events are happening?" aria-label="Ask about events">
+            <span class="topic-icon">🎉</span> Events
+          </button></li>
+          <li><button class="topic-btn" data-query="What is the placement record?" aria-label="Ask about placements">
+            <span class="topic-icon">💼</span> Placements
+          </button></li>
+          <li><button class="topic-btn" data-query="Is hostel available?" aria-label="Ask about hostel">
+            <span class="topic-icon">🏠</span> Hostel
+          </button></li>
+          <li><button class="topic-btn" data-query="How to contact the college?" aria-label="Ask about contact">
+            <span class="topic-icon">📞</span> Contact
+          </button></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="status-indicator" id="statusIndicator">
+          <span class="status-dot" id="statusDot"></span>
+          <span class="status-text" id="statusText">Connecting…</span>
+        </div>
+        <button class="clear-btn" id="clearBtn" aria-label="Clear conversation">
+          🗑️ Clear Chat
+        </button>
+      </div>
+    </aside>
+
+    <!-- ── Main Chat Panel ────────────────────────── -->
+    <main class="chat-panel">
+
+      <!-- Chat Header -->
+      <header class="chat-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle sidebar" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="header-info">
+          <div class="bot-avatar header-avatar" aria-hidden="true">🤖</div>
+          <div class="header-text">
+            <h1 class="header-title">CollegeBot</h1>
+            <p class="header-subtitle" id="headerSubtitle">Powered by ML &amp; NLP</p>
+          </div>
+        </div>
+
+        <div class="header-badge">
+          <span>AI</span>
+        </div>
+      </header>
+
+      <!-- Message Area -->
+      <section class="messages-area" id="messagesArea" role="log" aria-live="polite" aria-label="Chat messages">
+
+        <!-- Welcome message injected on load by JS; this is a noscript fallback -->
+        <noscript>
+          <p style="color:#fff;padding:1rem;">Please enable JavaScript to use the chatbot.</p>
+        </noscript>
+
+      </section>
+
+      <!-- Typing Indicator (hidden by default) -->
+      <div class="typing-wrapper" id="typingWrapper" aria-hidden="true">
+        <div class="bot-avatar small-avatar">🤖</div>
+        <div class="typing-bubble">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Input Area -->
+      <footer class="input-area">
+        <form class="input-form" id="inputForm" autocomplete="off" aria-label="Send a message">
+          <div class="input-wrapper">
+            <textarea
+              id="userInput"
+              class="message-input"
+              placeholder="Ask me about admissions, fees, courses…"
+              rows="1"
+              maxlength="500"
+              aria-label="Your message"
+              required
+            ></textarea>
+            <div class="char-count" id="charCount">0 / 500</div>
+          </div>
+          <button type="submit" class="send-btn" id="sendBtn" aria-label="Send message">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+              <path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z" />
+            </svg>
+          </button>
+        </form>
+        <p class="input-hint">Press <kbd>Enter</kbd> to send &nbsp;·&nbsp; <kbd>Shift+Enter</kbd> for new line</p>
+      </footer>
+
+    </main>
+  </div><!-- /.app-wrapper -->
+
+  <!-- Confidence badge tooltip (rendered dynamically) -->
+  <div class="confidence-tooltip" id="confidenceTooltip" role="tooltip" aria-hidden="true"></div>
+
+  <!-- Main script -->
+  <script src="/static/js/chat.js"></script>
+</body>
+</html>

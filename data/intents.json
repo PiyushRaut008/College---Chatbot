@@ -1,0 +1,316 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey there",
+        "Good morning",
+        "Good evening",
+        "How are you?",
+        "What's up?",
+        "Howdy",
+        "Greetings",
+        "Hi bot",
+        "Hello chatbot"
+      ],
+      "responses": [
+        "Hello! Welcome to the College Information Portal. How can I assist you today?",
+        "Hi there! I'm your college assistant. Ask me anything about admissions, courses, fees, or events!",
+        "Hey! Great to see you. What would you like to know about our college?",
+        "Greetings! I'm here to help with all your college-related queries."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Take care",
+        "Thanks, bye",
+        "That's all",
+        "I'm done",
+        "Exit",
+        "Quit",
+        "Nothing else"
+      ],
+      "responses": [
+        "Goodbye! Best of luck with your studies. Feel free to return anytime!",
+        "Take care! Don't hesitate to ask if you have more questions.",
+        "See you around! Wishing you all the best.",
+        "Bye! Our college team is always here to help you."
+      ]
+    },
+    {
+      "tag": "admissions",
+      "patterns": [
+        "How do I apply for admission?",
+        "What is the admission process?",
+        "When does admission start?",
+        "What are the admission requirements?",
+        "How to get admission in your college?",
+        "Tell me about the enrollment process",
+        "What documents are required for admission?",
+        "Is there a last date for applying?",
+        "Can I apply online for admission?",
+        "What is the admission deadline?",
+        "How to enroll in your college?",
+        "What are the eligibility criteria?",
+        "How to register for a course?",
+        "Admission procedure",
+        "Steps to apply"
+      ],
+      "responses": [
+        "Admissions are open from June 1st to July 31st every year. You can apply online at our portal or visit the admissions office. Required documents: 10th & 12th marksheets, ID proof, passport photo, and transfer certificate.",
+        "Our admission process: 1) Fill the online application form. 2) Upload required documents. 3) Pay the application fee (₹500). 4) Appear for counselling. 5) Confirm your seat. Admissions open annually in June.",
+        "To apply for admission, visit our website and fill the application form. The eligibility is 60% in 12th standard. Admissions are merit-based with counselling sessions held in July.",
+        "You can apply for admission online at college.edu/admissions. The last date is July 31st. Required documents include academic transcripts, ID proof, and a recent photograph."
+      ]
+    },
+    {
+      "tag": "fees",
+      "patterns": [
+        "What is the fee structure?",
+        "How much is the tuition fee?",
+        "Tell me about fees",
+        "What are the course fees?",
+        "Is there any scholarship available?",
+        "What is the annual fee?",
+        "Fee details",
+        "How much does it cost to study here?",
+        "Are there any fee concessions?",
+        "What is the hostel fee?",
+        "Semester fee details",
+        "Payment options for fees",
+        "Can I pay fees in installments?",
+        "Fee waiver process",
+        "What is the lab fee?"
+      ],
+      "responses": [
+        "Our fee structure for the academic year 2024-25: B.Tech ₹80,000/year, BCA ₹45,000/year, BBA ₹40,000/year, MBA ₹1,20,000/year. Hostel: ₹60,000/year. Fees can be paid in two installments.",
+        "Tuition fees vary by program: Engineering ₹80,000/year, Computer Applications ₹45,000/year, Management ₹40,000/year. We offer merit scholarships up to 50% fee waiver for top-ranking students.",
+        "The annual fee for B.Tech is ₹80,000 and for MBA is ₹1,20,000. Scholarships are available for students scoring above 90% in 12th. Fee payment can be done online or at the accounts office.",
+        "We have flexible fee payment options including installments. Scholarships are available for economically weaker sections and meritorious students. Contact accounts@college.edu for detailed fee breakdowns."
+      ]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "What courses do you offer?",
+        "Tell me about the programs available",
+        "List all courses",
+        "What programs are available?",
+        "Do you have computer science?",
+        "What are the available branches?",
+        "Tell me about engineering courses",
+        "Is MBA available?",
+        "Do you offer distance learning?",
+        "What undergraduate courses are offered?",
+        "Postgraduate programs available",
+        "Which departments are there?",
+        "Course list",
+        "Available streams",
+        "What can I study here?"
+      ],
+      "responses": [
+        "We offer the following programs:\n• B.Tech (CSE, ECE, ME, CE, EEE)\n• BCA (Bachelor of Computer Applications)\n• BBA (Bachelor of Business Administration)\n• MBA (Master of Business Administration)\n• MCA (Master of Computer Applications)\n• M.Tech (CSE, ECE)\nAll programs are AICTE approved.",
+        "Our college offers undergraduate and postgraduate programs in Engineering, Computer Science, and Management. Popular courses include B.Tech CSE, BCA, BBA, MBA, and MCA. We also offer certificate courses in Data Science and Cloud Computing.",
+        "Available courses: B.Tech (4 years), BCA (3 years), BBA (3 years), MBA (2 years), MCA (2 years), M.Tech (2 years). We also have short-term certification programs in AI/ML, Web Development, and Digital Marketing.",
+        "Courses offered include B.Tech in 5 specializations, BCA, BBA, MBA, MCA, and M.Tech. All courses are approved by AICTE and affiliated with the State Technical University."
+      ]
+    },
+    {
+      "tag": "exams",
+      "patterns": [
+        "When are the exams?",
+        "What is the exam schedule?",
+        "Tell me about internal exams",
+        "When is the semester exam?",
+        "Exam timetable",
+        "How many exams per semester?",
+        "What is the exam pattern?",
+        "Passing criteria",
+        "How to check exam results?",
+        "Re-exam policy",
+        "Supplementary exam details",
+        "Internal assessment marks",
+        "Examination rules",
+        "Hall ticket download",
+        "When does the result come out?"
+      ],
+      "responses": [
+        "Exams are held at the end of each semester. Semester exams (December & May) are conducted by the university. Internal exams (unit tests) are held monthly. You need 75% attendance to appear for semester exams.",
+        "Exam schedule: Unit Test 1 (September), Mid-Semester (October), Unit Test 2 (November), Semester End (December). Results are declared within 30 days. Hall tickets are available on the student portal 2 weeks before exams.",
+        "The exam pattern includes: Internal Assessment (40 marks) + Semester End Exam (60 marks) = 100 marks. Minimum passing marks: 40%. Supplementary exams are held for students who fail.",
+        "Semester exams are conducted in November-December and April-May. Results are published on the university portal. You can download hall tickets from the student dashboard. Re-exams are available for failed subjects."
+      ]
+    },
+    {
+      "tag": "faculty",
+      "patterns": [
+        "Who are the faculty members?",
+        "Tell me about the professors",
+        "How experienced are the teachers?",
+        "Faculty details",
+        "Who is the HOD?",
+        "Who is the principal?",
+        "Staff information",
+        "Teacher contact details",
+        "Are there PhD professors?",
+        "Faculty qualifications",
+        "Who teaches machine learning?",
+        "Department faculty list",
+        "Academic staff",
+        "Guest lecturers",
+        "Industry experts"
+      ],
+      "responses": [
+        "Our faculty includes 150+ highly qualified professors, 60% of whom hold PhD degrees. Key personnel: Principal – Dr. Ramesh Kumar (PhD, IIT Delhi), HOD CSE – Dr. Priya Sharma (PhD, NIT), HOD MBA – Prof. Anil Mehta (MBA, IIM). Faculty contact details are on our website.",
+        "We have an experienced faculty team with expertise in AI/ML, Data Science, Networks, and Management. Many faculty members are industry consultants and published researchers. Faculty office hours are 10 AM – 4 PM on weekdays.",
+        "The college has 150+ faculty across departments. CSE department is led by Dr. Priya Sharma. Faculty members have experience from top institutions like IITs, NITs, and IIMs. You can find faculty profiles at college.edu/faculty.",
+        "Our teaching staff includes 80 permanent faculty and 30 visiting industry experts. Faculty members have average 12+ years of experience. Several professors are active researchers with 200+ publications collectively."
+      ]
+    },
+    {
+      "tag": "events",
+      "patterns": [
+        "What events are happening?",
+        "Tell me about upcoming events",
+        "Any college fest coming up?",
+        "Cultural events",
+        "Technical events",
+        "Hackathon details",
+        "Sports events",
+        "Annual day",
+        "Placement drive schedule",
+        "Workshop details",
+        "Seminar schedule",
+        "Guest lecture schedule",
+        "Club activities",
+        "Extracurricular activities",
+        "Any competitions?"
+      ],
+      "responses": [
+        "Upcoming Events:\n• TechFest 2024 – October 15-17 (Hackathon, Coding Contest, Robotics)\n• Annual Cultural Fest – November 20-22 (Music, Dance, Drama)\n• Placement Drive – December 1-15 (Top 50+ companies)\n• Sports Week – January 10-15\nVisit college.edu/events for registration.",
+        "We host regular events including TechFest (annual technical festival), CultFest (cultural festival), industry seminars, hackathons, and placement drives. The next major event is TechFest in October. Register on our student portal.",
+        "College events this semester: Hackathon (Oct 20), Industry Expert Talk (Oct 28), Annual Sports Meet (Nov 5), Cultural Fest (Nov 20-22), Campus Placement Drive (Dec 1-15). All events are free for enrolled students.",
+        "Upcoming events include technical workshops on AI/ML and Cloud Computing, cultural performances during CultFest, and the annual placement drive with 50+ recruiting companies. Check the notice board or college.edu/events for updates."
+      ]
+    },
+    {
+      "tag": "placement",
+      "patterns": [
+        "What is the placement record?",
+        "Tell me about placements",
+        "Which companies hire from here?",
+        "What is the average salary package?",
+        "Highest placement package",
+        "Placement cell details",
+        "How many students get placed?",
+        "Top recruiters",
+        "Internship opportunities",
+        "Industry connections",
+        "Job placement statistics",
+        "Campus recruitment",
+        "Off-campus placement support",
+        "Career guidance",
+        "Alumni network"
+      ],
+      "responses": [
+        "Our placement record 2023-24: 95% placement rate, Avg package ₹6.5 LPA, Highest package ₹28 LPA (Google). Top recruiters: TCS, Infosys, Wipro, HCL, Accenture, Amazon, Flipkart, Deloitte, IBM, and 40+ more companies.",
+        "Excellent placement record! Last year, 95% of eligible students were placed. Average package: ₹6.5 LPA. Highest: ₹28 LPA. Top companies: Amazon, Google, Microsoft, TCS, Infosys. Placement cell provides training, mock interviews, and resume building.",
+        "The college placement cell is very active with 50+ companies visiting each year. Average salary is ₹6.5 LPA with the highest reaching ₹28 LPA. We also support internships and off-campus placements through our alumni network of 10,000+ professionals.",
+        "Placements at our college are excellent. 2023 statistics: 850 students placed, 50+ companies, avg package ₹6.5 LPA, max package ₹28 LPA. Companies include top MNCs like Amazon, Google, and IBM, plus domestic leaders like TCS and Infosys."
+      ]
+    },
+    {
+      "tag": "hostel",
+      "patterns": [
+        "Is hostel available?",
+        "Tell me about hostel facilities",
+        "Hostel fees",
+        "Boys hostel",
+        "Girls hostel",
+        "Is accommodation available?",
+        "Hostel amenities",
+        "On-campus housing",
+        "Hostel rules",
+        "Hostel food",
+        "Mess facility",
+        "Distance from college",
+        "Day scholars info",
+        "Can I stay on campus?"
+      ],
+      "responses": [
+        "We have separate hostels for boys and girls with 24/7 security. Hostel fee: ₹60,000/year (including mess). Facilities: Wi-Fi, AC rooms (premium), gym, common room with TV, laundry service. Apply for hostel during admission.",
+        "Hostel facilities are available for both boys and girls. Amenities include: furnished rooms, high-speed Wi-Fi, 24-hour hot water, nutritious mess food (veg/non-veg), security, and recreational facilities. Hostel fee is ₹60,000/year inclusive of meals.",
+        "On-campus hostels are available with excellent facilities. Boys hostel capacity: 500 students. Girls hostel capacity: 300 students. Amenities include Wi-Fi, AC rooms, gym, mess, and 24/7 security. Hostel allocation is first-come, first-served.",
+        "Campus accommodation includes boys and girls hostels with all modern amenities. The hostel fee of ₹60,000/year covers accommodation and three meals daily. Hostel residents get priority access to library and sports facilities."
+      ]
+    },
+    {
+      "tag": "library",
+      "patterns": [
+        "Tell me about the library",
+        "Library timings",
+        "How many books are available?",
+        "Digital library",
+        "E-resources",
+        "Library membership",
+        "Can I borrow books?",
+        "Library facilities",
+        "Study rooms",
+        "Library access"
+      ],
+      "responses": [
+        "The college library is open 8 AM – 8 PM on weekdays and 9 AM – 5 PM on weekends. It has 50,000+ books, 200+ journals, and access to digital databases like IEEE, Springer, and JSTOR. Students can borrow up to 3 books for 14 days.",
+        "Our well-equipped library has 50,000+ physical books and access to major digital libraries. Features: separate reading rooms, digital catalog, e-journals, 24/7 online access to digital resources. Library cards are issued during admission.",
+        "The library offers 50,000+ books across all subjects, digital resources (IEEE, ACM, Springer), comfortable reading rooms, and Wi-Fi. Timing: Mon-Fri 8 AM – 8 PM, Sat-Sun 9 AM – 5 PM. Maximum borrow: 3 books for 14 days."
+      ]
+    },
+    {
+      "tag": "contact",
+      "patterns": [
+        "What is the college phone number?",
+        "How to contact the college?",
+        "Email address of the college",
+        "College address",
+        "Where is the college located?",
+        "Contact details",
+        "How to reach college?",
+        "Helpline number",
+        "Support contact",
+        "Office timings",
+        "College website"
+      ],
+      "responses": [
+        "Contact us:\n📍 Address: 123 College Road, Education City, State – 400001\n📞 Phone: +91-22-12345678\n📧 Email: info@college.edu\n🌐 Website: www.college.edu\n⏰ Office Hours: Mon-Sat, 9 AM – 5 PM",
+        "You can reach us at:\nPhone: +91-22-12345678 (9 AM – 5 PM, Mon-Sat)\nEmail: info@college.edu\nAdmissions: admissions@college.edu\nPlacements: placements@college.edu\nAddress: 123 College Road, Education City – 400001",
+        "College Contact:\nMain Office: +91-22-12345678\nAdmissions Helpline: +91-22-12345679\nEmail: info@college.edu\nWebsite: www.college.edu\nWe are located on College Road, Education City, easily accessible by metro and bus."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Thanks a lot",
+        "That was helpful",
+        "Great, thanks",
+        "Awesome",
+        "Perfect",
+        "You helped me a lot",
+        "Much appreciated",
+        "That's great"
+      ],
+      "responses": [
+        "You're welcome! Is there anything else I can help you with?",
+        "Happy to help! Feel free to ask if you have more questions.",
+        "Glad I could assist! Don't hesitate to reach out anytime.",
+        "My pleasure! Best of luck with your college journey!"
+      ]
+    }
+  ]
+}

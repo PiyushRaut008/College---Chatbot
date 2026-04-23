@@ -1,0 +1,19 @@
+# College Chatbot – Python Dependencies
+# Install with: pip install -r requirements.txt
+
+# Web framework
+Flask>=3.0.0
+flask-cors>=4.0.0
+
+# Machine Learning (flexible for Python 3.9-3.13 compatibility)
+scikit-learn>=1.4.0
+numpy>=1.26.0
+
+# Natural Language Processing
+nltk>=3.8.0
+
+# Spell correction (optional but recommended)
+pyspellchecker>=0.7.0
+
+# Utilities
+python-dotenv>=1.0.0
